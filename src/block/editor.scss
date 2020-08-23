@@ -1,0 +1,83 @@
+/**
+ *  For Gutenberg Editor styles
+ */
+
+ .wp-block-cgb-block-my-block  {
+  background: $green;
+  color: $black;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem;
+}
+/** Search input syle */
+.components-text-control__input{
+  line-height: 1.5;
+  padding: 1rem 5px !important;
+  font-size: 1.2rem !important;
+}
+.resort-wrapper{
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 2rem;
+  background-color: $white;
+  .resort-pic-wrapper{
+    max-width: 100%;
+    min-height: 300px;
+    position: relative;
+      .resort-title{
+        position: absolute;
+        top: -40px;
+        width: 100%;
+        background-color: #4b4b4b;
+        color: $white !important;
+        line-height: 2.5;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    .resort-weather{
+      position: absolute;
+      bottom: -19px;
+      background-color: #4b4b4b;
+      width: 100%;
+      text-align: center;
+      color: $white;
+      padding: 1rem 0;
+      font-size: 2rem;
+      opacity: 0.9;
+        .forhold{
+          display: block;
+          text-transform: uppercase;
+          font-size: 2rem;
+        }
+    }
+  }
+  .resort-description{
+      padding: 0 1rem;
+      .resort-cloud{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: #576574;
+        gap: 50%;
+          .temp{
+            color: $red;
+            font-size: 2.5rem;
+          }
+      }
+      .resort-wind{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: #576574;
+        gap: 50%;
+      }
+  }
+}
+
+
+
+
+
+

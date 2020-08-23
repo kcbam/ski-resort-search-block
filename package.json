@@ -1,0 +1,14 @@
+{
+  "name": "ski-resort-search-block-cgb-guten-block",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cgb-scripts start",
+    "build": "cgb-scripts build",
+    "eject": "cgb-scripts eject"
+  },
+  "dependencies": {
+    "cgb-scripts": "1.23.1",
+    "react-html-parser": "^2.0.2"
+  }
+}
