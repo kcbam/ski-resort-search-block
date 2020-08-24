@@ -12,8 +12,7 @@ export default class ResortApi extends Component {
         super(...arguments);
         this.state = {
             results: {},
-            searchInput: '',
-            loading: false
+            searchInput: ''
         }
     }
     searchApi = async (query) => {
@@ -22,7 +21,6 @@ export default class ResortApi extends Component {
                 this.setState({
                     results: '',
                     searchInput: '',
-                    loading: false,
                 });
                 return false;
             }
@@ -34,9 +32,9 @@ export default class ResortApi extends Component {
             const baseUrl = 'https://api.fnugg.no/';
             const response = await fetch(`${baseUrl}search?q=${query}`);
             const data = await response.json();
-            this.setState({ results: data, error: false, loading: true });
+            this.setState({ results: data, error: false });
 
-            //Search result called here when the user search 
+            //it holds .5 seconds and then it calls the searchResult- user take time to type the name
             setTimeout(() => {
                 this.searchResult();
             }, 500);

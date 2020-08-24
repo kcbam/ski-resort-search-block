@@ -5,7 +5,7 @@
  * Simple block, renders and saves the same content without any interactivity.
  */
 
-// Import Custom block 
+// Import Custom block file 
 import ResortApi from './skiResortApi';
 import ReactHtmlParser from "react-html-parser";
 //  Import CSS.
